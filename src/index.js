@@ -23,6 +23,15 @@ document.addEventListener("DOMContentLoaded", () => {
     descriptionDisplay.textContent = movie.description;
   }
   let ticketsAvailable = movie.capacity - movie.tickets_sold
-  
+buyButton.addEventListener("click",( => {
+    if (ticketsAvailable > 0){ ticketsAvailable -= 1; 
+        ticketCountDisplay.textContent = `${ticketsAvailable} tickets remaing`;
+    }
+    else {
+        alert("Sorry, this showing is sold out!");
+    }
+    
+    
+}))
 }
 )
