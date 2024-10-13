@@ -14,12 +14,11 @@ document.addEventListener("DOMContentLoaded", () => {
     let ticketsAvailable;
   
     function loadFirstMovie() {
-      fetch(baseURL)
+      fetch(`${baseURL}/1`)
         .then((response) => response.json())
         .then((movie) => {
-          currentMovie.textContent = movie.title;
-         let  ticketsAvailable = movie.capacity - movie.tickets_sold;
-         titleDisplay.
+          currentMovie = movie
+          ticketsAvailable = movie.capacity - movie.tickets_sold;
           displayMovieDetails(movie);
         });
     }
