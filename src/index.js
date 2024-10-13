@@ -22,5 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     showtimeDisplay.textContent = movie.showtime;
     descriptionDisplay.textContent = movie.description;
   }
+  let ticketsAvailable = movie.capacity - movie.tickets_sold
+  
 }
 )
