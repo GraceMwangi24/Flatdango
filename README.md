@@ -17,7 +17,7 @@ Use this gif as an example of how the app should work.
 Run this command to get the backend started:
 
 ```console
-$ json-server --watch db.json
+$ 
 ```
 
 Test your server by visiting this route in the browser:
@@ -115,7 +115,7 @@ attempting the bonus deliverables!**
 
    ```html
    <li class="film item">(Title of film)</li>
-   <li class="sold-out film item">(Title of a sold-out film)</li>
+   <li class="sold-out film item">(Tjson-server --watch db.jsonitle of a sold-out film)</li>
    <li class="film item">(Title of film)</div>
    ```
 
