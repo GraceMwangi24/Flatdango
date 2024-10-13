@@ -15,5 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((Response) => Response.json)
     .then((movie) => displayMovieDetails(movie));
   }
+  function displayMovieDetails(movie){
+    posterDisplay.src = movie.poster;
+    posterDisplay.alt = movie.title;
+    titleDisplay.textContent = `Runtime: ${movie.runtime} minutes`;
+    showtimeDisplay.textContent = movie.showtime;
+    descriptionDisplay.textContent = movie.description;
+  }
 }
 )
